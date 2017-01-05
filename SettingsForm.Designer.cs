@@ -43,6 +43,7 @@
             // 
             // selectPdf
             // 
+            this.selectPdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selectPdf.Location = new System.Drawing.Point(418, 25);
             this.selectPdf.Name = "selectPdf";
             this.selectPdf.Size = new System.Drawing.Size(23, 23);
@@ -62,6 +63,8 @@
             // 
             // InputPdf
             // 
+            this.InputPdf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.InputPdf.Location = new System.Drawing.Point(24, 25);
             this.InputPdf.Name = "InputPdf";
             this.InputPdf.Size = new System.Drawing.Size(388, 20);
@@ -85,6 +88,7 @@
             // 
             // Create
             // 
+            this.Create.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Create.Location = new System.Drawing.Point(307, 144);
             this.Create.Name = "Create";
             this.Create.Size = new System.Drawing.Size(64, 23);
@@ -95,6 +99,7 @@
             // 
             // Exit
             // 
+            this.Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Exit.Location = new System.Drawing.Point(377, 144);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(64, 23);
@@ -105,6 +110,8 @@
             // 
             // OutputFolder
             // 
+            this.OutputFolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.OutputFolder.Location = new System.Drawing.Point(24, 69);
             this.OutputFolder.Name = "OutputFolder";
             this.OutputFolder.Size = new System.Drawing.Size(388, 20);
@@ -121,6 +128,7 @@
             // 
             // selectOutputFolder
             // 
+            this.selectOutputFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selectOutputFolder.Location = new System.Drawing.Point(418, 69);
             this.selectOutputFolder.Name = "selectOutputFolder";
             this.selectOutputFolder.Size = new System.Drawing.Size(23, 23);
@@ -131,6 +139,7 @@
             // 
             // About
             // 
+            this.About.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.About.Location = new System.Drawing.Point(24, 146);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(64, 23);

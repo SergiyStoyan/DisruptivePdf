@@ -7,7 +7,7 @@
     <ProjectGuid>{B1D7BA69-35AA-45BD-B1D0-D84FD2BC47A0}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>3RINGS.ICO</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>DisruptivePdf</AssemblyName>
@@ -137,6 +137,7 @@
     <Compile Include="SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Content Include="3RINGS.ICO" />
     <Content Include="App.ico" />
     <Compile Include="ImageRoutines.cs" />
     <Compile Include="Pdf.cs" />

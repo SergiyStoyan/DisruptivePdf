@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Cliver.DisruptivePdf
 {
-    partial class AboutBox : Form
+    partial class AboutBox : BaseForm//Form//
     {
         public AboutBox()
         {
