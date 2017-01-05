@@ -49,9 +49,16 @@ namespace Cliver.DisruptivePdf
                     ControlRoutines.BeginInvoke(this, () =>
                     {
                         Message.Inform("Completed.");
+                    });
+                },
+                null,
+                ()=> {
+                    ControlRoutines.BeginInvoke(this, () =>
+                    {
                         foreach (Control c in this.Controls) c.Enabled = true;
                     });
-                });
+                }
+                );
             }
             catch (Exception ex)
             {
