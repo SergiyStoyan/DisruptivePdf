@@ -38,6 +38,7 @@
             this.OutputFolder = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.selectOutputFolder = new System.Windows.Forms.Button();
+            this.About = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // selectPdf
@@ -128,11 +129,22 @@
             this.selectOutputFolder.UseVisualStyleBackColor = true;
             this.selectOutputFolder.Click += new System.EventHandler(this.selectOutputFolder_Click);
             // 
+            // About
+            // 
+            this.About.Location = new System.Drawing.Point(24, 146);
+            this.About.Name = "About";
+            this.About.Size = new System.Drawing.Size(64, 23);
+            this.About.TabIndex = 10;
+            this.About.Text = "About";
+            this.About.UseVisualStyleBackColor = true;
+            this.About.Click += new System.EventHandler(this.About_Click);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 181);
+            this.Controls.Add(this.About);
             this.Controls.Add(this.OutputFolder);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.selectOutputFolder);
@@ -164,5 +176,6 @@
         private System.Windows.Forms.TextBox OutputFolder;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button selectOutputFolder;
+        private System.Windows.Forms.Button About;
     }
 }

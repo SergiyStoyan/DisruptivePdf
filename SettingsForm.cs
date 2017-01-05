@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Cliver.DisruptivePdf
 {
-    public partial class SettingsForm : BaseForm//Form//
+    public partial class SettingsForm : Form//BaseForm//
     {
         public SettingsForm()
         {
@@ -75,6 +75,12 @@ namespace Cliver.DisruptivePdf
             if (d.ShowDialog(this) != DialogResult.OK || string.IsNullOrWhiteSpace(d.SelectedPath))
                 return;
             OutputFolder.Text = d.SelectedPath;
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            AboutBox ab = new AboutBox();
+            ab.ShowDialog();
         }
     }
 }

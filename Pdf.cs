@@ -70,10 +70,10 @@ namespace Cliver.DisruptivePdf
         {
             image = ImageRoutines.GetCroppedByColor(image, System.Drawing.Color.Transparent);
             Image i = Image.GetInstance(image, (BaseColor)null);
-            i.ScaleToFit(r);
-            //var ratio = Math.Min((float)r.Width / image.Width, (float)r.Height / image.Height);
-            //i.ScalePercent(ratio * 100);
-            i.SetAbsolutePosition(r.Left, r.Height - i.Height);
+            //i.ScaleToFit(r);
+            var ratio = Math.Min((float)r.Width / image.Width, (float)r.Height / image.Height);
+            i.ScalePercent(ratio * 100);
+            i.SetAbsolutePosition(r.Left, r.Height - i.ScaledHeight);
             pcb.AddImage(i);
         }
     }
