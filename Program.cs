@@ -18,6 +18,8 @@ namespace Cliver.DisruptivePdf
         {
             try
             {
+                Config.Initialize(new string[] { "Default" });
+                Config.Reload();
                 //string[] ps = Environment.GetCommandLineArgs();
                 //if (ps.Length < 6)
                 //{

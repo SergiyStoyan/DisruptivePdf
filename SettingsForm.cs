@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Cliver.DisruptivePdf
 {
-    public partial class SettingsForm : Form
+    public partial class SettingsForm : BaseForm//Form//
     {
         public SettingsForm()
         {
@@ -42,8 +42,16 @@ namespace Cliver.DisruptivePdf
                 if (string.IsNullOrWhiteSpace(OutputFolder.Text))
                     throw new Exception("Output folder is not specified.");
 
-                string f = Pdf.Create(InputPdf.Text, Password.Text, OutputFolder.Text);
-                Message.Inform("Completed.");
+                ThreadRoutines.StartTry(() =>
+                {
+                    ControlRoutines.BeginInvoke(this, () => { foreach (Control c in Controls) c.Enabled = false; });
+                    string f = Pdf.Create(InputPdf.Text, Password.Text, OutputFolder.Text);
+                    ControlRoutines.BeginInvoke(this, () =>
+                    {
+                        Message.Inform("Completed.");
+                        foreach (Control c in this.Controls) c.Enabled = true;
+                    });
+                });
             }
             catch (Exception ex)
             {
